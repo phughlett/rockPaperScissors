@@ -6,6 +6,11 @@ const argv = yargs(hideBin(process.argv)).argv
 
 let playerToss = argv.move;
 
+if(playerToss === undefined){
+  console.log("Use command --move=playerToss to play!");
+  return;
+}
+
 
 let computerTossOptions = ['rock', 'paper', 'scissors'];
 
